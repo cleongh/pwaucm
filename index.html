@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA UCM</title>
+
+    <script>
+        // si nuestro navegador ejecuta service workers
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/ucm_service_worker.js').then(reg => {
+                    console.log('Todo bien:', reg)
+                }, function (err) {
+                    console.log('Fallo:', err)
+                })
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <h1>PWA UCM</h1>
+    <p id="texto"></p>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

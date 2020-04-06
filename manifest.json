@@ -1,0 +1,16 @@
+{
+    "dir": "ltr",
+    "lang": "es-es",
+    "name": "PWA UCM",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://clnznr.github.io/pwaucm",
+    "short_name": "pwaucm",
+    "theme_color": "transparent",
+    "description": "PWA UCM",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": []
+}
