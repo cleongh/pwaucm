@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PWA UCM</title>
@@ -12,7 +12,7 @@
         // si nuestro navegador ejecuta service workers
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/ucm_service_worker.js').then(reg => {
+                navigator.serviceWorker.register('ucm_service_worker.js').then(reg => {
                     console.log('Todo bien:', reg)
                 }, function (err) {
                     console.log('Fallo:', err)
